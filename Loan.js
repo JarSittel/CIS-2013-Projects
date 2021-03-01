@@ -7,9 +7,9 @@ var $ = function (id)
  var calculate = function()
  {
     var floatTotalCost, floatMonthlyPayment, intLoanTerm;
-    floatMonthlyPayment = $("monthly_payment").value;
-    intLoanTerm = $("loan_length").value;
-    floatTotalCost = floatMonthlyPayment*intLoanTerm;
+    floatMonthlyPayment = parseFloat($("monthly_payment").value);
+    intLoanTerm = parseInt($("loan_length").value);
+    floatTotalCost = parseFloat(floatMonthlyPayment*intLoanTerm);
     $("total_cost").value = floatTotalCost;
  }
  
