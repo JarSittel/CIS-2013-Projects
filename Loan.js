@@ -15,9 +15,8 @@ var $ = function (id)
  
  window.onload = function () 
 {
-    var floatMonthlyPayment, intLoanTerm;
-    $("loan_length").value = floatMonthlyPayment;
+    $("loan_length").value = "";
     $("total_cost").value = "";
-    $("calc").onclick = calculate(floatMonthlyPayment, intLoanTerm);
-    $("monthly_payment").focus(intLoanTerm);
+    $("calc").onclick = calculate($("loan_length"), $("monthly_payment"));
+    $("monthly_payment").focus();
 }
