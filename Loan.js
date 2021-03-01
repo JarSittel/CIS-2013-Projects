@@ -17,6 +17,7 @@ var $ = function (id)
 {
     $("loan_length").value = "";
     $("total_cost").value = "";
-    $("calc").onclick = calculate();
     $("monthly_payment").focus();
+    $("calc").onclick = calculate();
+    
 }
